@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg text-bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand text-bg-primary" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,16 +27,16 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-bg-primary active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link text-bg-primary" href="#">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link text-bg-primary" href="#">Pricing</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle text-bg-primary" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Dropdown link
                         </a>
@@ -79,36 +79,17 @@
             </button>
         </div>
     </section>
-    <main class="col-12 d-flex flex-column">
+    <main class="col-12 d-flex flex-column p-5">
         <!-- Cards aqui -->
-        <div class="row w-100">
-
-            <div class="card col-6" style="width: 18rem;">
+        <div class="row d-flex justify-content-around">
+            <div class="card m-3" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row w-100">
-
-            <div class="card col-6" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card m-3" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -117,16 +98,34 @@
             </div>
         </div>
 
-        <div class="row w-100">
+        <div class="row d-flex justify-content-around">
 
-            <div class="card col-6" style="width: 18rem;">
+            <div class="card m-3" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card m-3" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-around">
+
+            <div class="card m-3" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -138,20 +137,31 @@
     </main>
     <footer class="py-3 px-5 d-flex justify-content-between text-bg-dark">
         <span>Equipe do Boostrap</span>
-        <div class="btn-group">
-            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Integrantes
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Thales Davi de Souza</a></li>
-                <li><a class="dropdown-item" href="#">Eduardo Santos Birchal</a></li>
-                <li><a class="dropdown-item" href="#">Arthur Henrique Chaves</a></li>
-                <li><a class="dropdown-item" href="#">Caio César</a></li>
-                <li><a class="dropdown-item" href="#">Artur Gonzaga</a></li>
-                <li><a class="dropdown-item" href="#">Júlia Leão</a></li>
-            </ul>
-        </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Integrantes
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog text-bg-dark">
+              <div class="modal-content text-bg-dark">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Integrantes do Grupo:</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- Thales Davi</p>
+                    <p>- Caio César</p>
+                    <p>- Eduardo Santos Birchal</p>
+                    <p>- Julia Leão</p>
+                    <p>- Arthur Henrique</p>
+                    <p>- Artur Gonzaga</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </footer>
 </body>
 
