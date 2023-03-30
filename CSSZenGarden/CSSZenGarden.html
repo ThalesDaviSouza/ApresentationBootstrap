@@ -58,9 +58,9 @@
 			<nav class="navbar bg-dark">
 				<div class="container-fluid">
 					<a class="navbar-brand w-100 text-bg-dark" href="#">
-						<header class="d-inline-flex align-items-center justify-content-between" role="banner">
+						<header class="d-inline-flex align-items-center row m-0" role="banner">
 							<!-- Button trigger modal -->
-							<button type="button" class="btn rounded-pill px-3 text-bg-danger fs-3"
+							<button type="button" class="btn rounded-pill px-3 text-bg-danger col-12 fs-2 mb-4"
 								data-bs-toggle="modal" data-bs-target="#exampleModal">
 								CSS Zen Garden
 							</button>
@@ -98,7 +98,7 @@
 				</div>
 			</nav>
 
-			<div class="row m-3">
+			<div class="row m-3 first-part text-center">
 
 				<div class="summary col-12 col-md-4 d-flex flex-column justify-content-center text-center" id="zen-summary" role="article">
 					<p>A demonstration of what can be accomplished through <abbr
@@ -112,7 +112,7 @@
 					</p>
 				</div>
 
-				<div class="preamble col-12 col-md-8" id="zen-preamble" role="article">
+				<div class="preamble col-12 col-md-8 d-flex flex-column justify-content-center" id="zen-preamble" role="article">
 					<h3 class="text-center">The Road to Enlightenment</h3>
 					<p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr
 							title="Document Object Model">DOM</abbr>s, broken <abbr
@@ -128,9 +128,9 @@
 			</div>
 		</section>
 
-		<div class="main supporting" id="zen-supporting" role="main">
-			<div class="explanation" id="zen-explanation" role="article">
-				<h3>So What is This About?</h3>
+		<div class="main supporting text-bg-dark p-5 row m-0" id="zen-supporting" role="main">
+			<div class="explanation col-12 col-md-3" id="zen-explanation" role="article">
+				<h3 class="fs-1 fw-bold text-center pb-3 text-decoration-underline">So What is This About?</h3>
 				<p>There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. The
 					Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing
 					designs in the list. Clicking on any one will load the style sheet into this very page. The <abbr
@@ -143,8 +143,8 @@
 					always push it further.</p>
 			</div>
 
-			<div class="participation" id="zen-participation" role="article">
-				<h3>Participation</h3>
+			<div class="participation  col-12 col-md-3" id="zen-participation" role="article">
+				<h3 class="fs-1 fw-bold text-center pb-3 text-decoration-underline">Participation</h3>
 				<p>Strong visual design has always been our focus. You are modifying this page, so strong <abbr
 						title="Cascading Style Sheets">CSS</abbr> skills are necessary too, but the example files are
 					commented well enough that even <abbr title="Cascading Style Sheets">CSS</abbr> novices can use them
@@ -167,16 +167,16 @@
 					server.</p>
 			</div>
 
-			<div class="benefits" id="zen-benefits" role="article">
-				<h3>Benefits</h3>
+			<div class="benefits col-12 col-md-3" id="zen-benefits" role="article">
+				<h3 class="fs-1 fw-bold text-center pb-3 text-decoration-underline">Benefits</h3>
 				<p>Why participate? For recognition, inspiration, and a resource we can all refer to showing people how
 					amazing <abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal
 					parts inspiration for those working on the web today, learning tool for those who will be tomorrow,
 					and gallery of future techniques we can all look forward to.</p>
 			</div>
 
-			<div class="requirements" id="zen-requirements" role="article">
-				<h3>Requirements</h3>
+			<div class="requirements col-12 col-md-3" id="zen-requirements" role="article">
+				<h3 class="fs-1 fw-bold text-center pb-3 text-decoration-underline">Requirements</h3>
 				<p>Where possible, we would like to see mostly <abbr title="Cascading Style Sheets, levels 1 and 2">CSS
 						1 &amp; 2</abbr> usage. <abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp;
 						4</abbr> should be limited to widely-supported elements only, or strong fallbacks should be
@@ -224,41 +224,41 @@
 
 
 		<aside class="sidebar" role="complementary">
-			<div class="wrapper">
+			<div class="wrapper row m-0">
 
-				<div class="design-selection" id="design-selection">
+				<div class="design-selection list-group col-12 col-md-4" id="design-selection">
 					<h3 class="select">Select a Design:</h3>
 					<nav role="navigation">
 						<ul>
-							<li>
+							<li class="list-group-item list-group-item-action">
 								<a href="/221/" class="design-name">Mid Century Modern</a> by <a
 									href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
 							</li>
-							<li>
+							<li class="list-group-item list-group-item-action">
 								<a href="/220/" class="design-name">Garments</a> by <a href="http://danielmall.com/"
 									class="designer-name">Dan Mall</a>
 							</li>
-							<li>
+							<li class="list-group-item list-group-item-action">
 								<a href="/219/" class="design-name">Steel</a> by <a href="http://steffen-knoeller.de"
 									class="designer-name">Steffen Knoeller</a>
 							</li>
-							<li>
+							<li class="list-group-item list-group-item-action">
 								<a href="/218/" class="design-name">Apothecary</a> by <a href="http://trentwalton.com"
 									class="designer-name">Trent Walton</a>
 							</li>
-							<li>
+							<li class="list-group-item list-group-item-action">
 								<a href="/217/" class="design-name">Screen Filler</a> by <a
 									href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
 							</li>
-							<li>
+							<li class="list-group-item list-group-item-action">
 								<a href="/216/" class="design-name">Fountain Kiss</a> by <a
 									href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
 							</li>
-							<li>
+							<li class="list-group-item list-group-item-action">
 								<a href="/215/" class="design-name">A Robot Named Jimmy</a> by <a
 									href="http://meltmedia.com/" class="designer-name">meltmedia</a>
 							</li>
-							<li>
+							<li class="list-group-item list-group-item-action">
 								<a href="/214/" class="design-name">Verde Moderna</a> by <a
 									href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
 							</li>
@@ -266,16 +266,16 @@
 					</nav>
 				</div>
 
-				<div class="design-archives" id="design-archives">
+				<div class="design-archives col-12 col-md-4" id="design-archives">
 					<h3 class="archives">Archives:</h3>
 					<nav role="navigation">
-						<ul>
-							<li class="next">
+						<ul class="list-group">
+							<li class="next list-group-item list-group-item-action">
 								<a href="/214/page1">
 									Next Designs <span class="indicator">›</span>
 								</a>
 							</li>
-							<li class="viewall">
+							<li class="viewall list-group-item list-group-item-action">
 								<a href="/pages/alldesigns/" title="View every submission to the Zen Garden.">
 									View All Designs </a>
 							</li>
@@ -283,26 +283,26 @@
 					</nav>
 				</div>
 
-				<div class="zen-resources" id="zen-resources">
+				<div class="zen-resources col-12 col-md-4" id="zen-resources">
 					<h3 class="resources">Resources:</h3>
-					<ul>
-						<li class="view-css">
+					<ul class="list-group">
+						<li class="view-css list-group-item list-group-item-action">
 							<a href="/214/214.css" title="View the source CSS file of the currently-viewed design.">
 								View This Design’s <abbr title="Cascading Style Sheets">CSS</abbr> </a>
 						</li>
-						<li class="css-resources">
+						<li class="css-resources list-group-item list-group-item-action">
 							<a href="/pages/resources/" title="Links to great sites with information on using CSS.">
 								<abbr title="Cascading Style Sheets">CSS</abbr> Resources </a>
 						</li>
-						<li class="zen-faq">
+						<li class="zen-faq list-group-item list-group-item-action">
 							<a href="/pages/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">
 								<abbr title="Frequently Asked Questions">FAQ</abbr> </a>
 						</li>
-						<li class="zen-submit">
+						<li class="zen-submit list-group-item list-group-item-action">
 							<a href="/pages/submit/" title="Send in your own CSS file.">
 								Submit a Design </a>
 						</li>
-						<li class="zen-translations">
+						<li class="zen-translations list-group-item list-group-item-action">
 							<a href="/pages/translations/" title="View translated versions of this page.">
 								Translations </a>
 						</li>
